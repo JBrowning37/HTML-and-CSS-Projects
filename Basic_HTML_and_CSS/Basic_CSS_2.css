@@ -1,0 +1,11 @@
+p {
+	color: Chartreuse;
+	background: BlueViolet;
+	font-weight: bold;
+	text-align: center;
+}
+h1 {
+	color: BlueViolet;
+	text-shadow: 2px 2px Chartreuse;
+	text-align: center;
+}
