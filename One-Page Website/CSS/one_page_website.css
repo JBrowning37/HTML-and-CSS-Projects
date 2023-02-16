@@ -1,0 +1,76 @@
+body {
+    background-image: url(../Images/wallpaper.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    text-align: center;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+.main-title {
+    font-family: 'FreeMono';
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+
+.reservations {
+    width: 60%;
+    margin: 0px auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: rgb(244, 189, 87)
+}
+
+.reservations form {
+    font-size: 15px;
+    color: black;
+    padding: 12px 12px;
+    width: 70%;
+    margin: 2% auto;
+    border-radius: 10px;
+    background: rgb(241, 144, 17);
+}
+
+.reservations input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: black;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 1px solid white;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: outline;
+}
+
+.reservations input[type="text"]:hover {
+    outline: 3px solid rgb(199, 36, 36);
+}
+
+.reservations input[type="submit"] {
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 12px 3%;
+    padding: 7px 0px;
+    width: 30%;
+    border: none;
+    border-radius: 7px;
+    transition: outline .25s;
+}
+
+.reservations input[type="submit"]:hover {
+    outline: 4px solid rgb(199, 36, 36);
+}
+
+
