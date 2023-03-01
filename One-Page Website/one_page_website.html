@@ -34,80 +34,122 @@
 		<section>
 			<div id="gallery">
 				<h2>GALLERY</h2>
-				<div>
-					
-					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div class="images">
-							<img src="./images/Thumbnail_1.png" alt="">
+				<!--These are the images used to open the lightbox-->
+				<div class="row">
+					<div class="column">
+						<img src="Images/Small_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="Images/Small_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="Images/Small_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="Images/Small_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="Images/Small_5.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="Images/Small_6.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="Images/Small_7.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="Images/Small_8.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
+					</div>
+
+				</div>
+
+				<!--Modal / Lightbox-->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 8</div>
+							<img src="Images/Thumbnail_1.png" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 8</div>
+							<img src="Images/Thumbnail_2.png" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 8</div>
+							<img src="Images/Thumbnail_3.png" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">4 / 8</div>
+							<img src="Images/Thumbnail_4.png" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">5 / 8</div>
+							<img src="Images/Thumbnail_5.png" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">6 / 8</div>
+							<img src="Images/Thumbnail_6.png" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">7 / 8</div>
+							<img src="Images/Thumbnail_7.png" style="width:100%">
+						</div>
+						
+						<div class="mySlides">
+							<div class="numbertext">8 / 8</div>
+							<img src="Images/Thumbnail_8.png" style="width:100%">
+						</div>
+
+						<!--Next/previous controls-->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<!--Caption text-->
+						<div class="caption-container">
+							<p id="caption">this is the caption</p>
+						</div>
+
+						<!--Thumbnail image controls-->
+						<div id="column_modal">
+							<img class="demo" src="Images/Small_1.png" onclick="currentSlide(1)" alt="">
+						</div>
+
+						<div id="column_modal">
+							<img class="demo" src="Images/Small_2.png" onclick="currentSlide(2)" alt="">
+						</div>
+
+						<div id="column_modal">
+							<img class="demo" src="Images/Small_3.png" onclick="currentSlide(3)" alt="">
+						</div>
+
+						<div id="column_modal">
+							<img class="demo" src="Images/Small_4.png" onclick="currentSlide(4)" alt="">
+						</div>
+
+						<div id="column_modal">
+							<img class="demo" src="Images/Small_5.png" onclick="currentSlide(5)" alt="">
+						</div>
+
+						<div id="column_modal">
+							<img class="demo" src="Images/Small_6.png" onclick="currentSlide(6)" alt="">
+						</div>
+
+						<div id="column_modal">
+							<img class="demo" src="Images/Small_7.png" onclick="currentSlide(7)" alt="">
+						</div>
+
+						<div id="column_modal">
+							<img class="demo" src="Images/Small_8.png" onclick="currentSlide(8)" alt="">
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 1 -->
-					
-					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div class="images">
-							<img src="./images/Thumbnail_2.png" alt="">
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 2 -->
-					
-					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div class="images">
-							<img src="./images/Thumbnail_3.png" alt="">
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 3 -->
-					
-					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div class="images">
-							<img src="./images/Thumbnail_4.png" alt="">
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 4 -->
-					
-					<!-- PHOTO-CONTAINER 5 -->
-					<div>
-						<div class="images">
-							<img src="./images/Thumbnail_5.png" alt="">
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 5 -->
-					
-					<!-- PHOTO-CONTAINER 6 -->
-					<div>
-						<div class="images">
-							<img src="./images/Thumbnail_6.png" alt="">
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 6 -->
-					
-					<!-- PHOTO-CONTAINER 7 -->
-					<div>
-						<div class="images">
-							<img src="./images/Thumbnail_7.png" alt="">
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 7 -->
-					
-					<!-- PHOTO-CONTAINER 8 -->
-					<div>
-						<div class="images">
-						<img src="./images/Thumbnail_8.png" alt="">
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 8 -->
-					
-					<!-- PHOTO-CONTAINER 9 -->
-					<div>
-						<div class="images">
-						<img src="./images/Thumbnail_9.png" alt="">
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 9 -->
-					
 				</div>
 			</div>
 		<section>
@@ -145,7 +187,7 @@
 				www.lemondroptattoos.com &nbsp;|&nbsp; &copy; 2023
 		</div>
 		<!-- END FOOTER -->
-		
+		<script src="JS/one_page_website.js"></script>
 	</body>
 </html>
 	
